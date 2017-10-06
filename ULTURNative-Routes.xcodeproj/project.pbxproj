@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		16206800C2D7BF95555F7816 /* Pods_ULTURNative_RoutesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25589E27D15ACB035C920C9E /* Pods_ULTURNative_RoutesUITests.framework */; };
 		73FF996435DB06EF65E8950B /* Pods_ULTURNative_RoutesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4AAE162D3FB8D6F428C4CA /* Pods_ULTURNative_RoutesTests.framework */; };
+		C93FC3FA1F8832D600E19D10 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93FC3F91F8832D600E19D10 /* MapKit.framework */; };
 		CE7AB62D1F7EF93200BCC383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7AB62C1F7EF93200BCC383 /* AppDelegate.swift */; };
 		CE7AB62F1F7EF93200BCC383 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7AB62E1F7EF93200BCC383 /* ViewController.swift */; };
 		CE7AB6321F7EF93200BCC383 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7AB6301F7EF93200BCC383 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		8F4127894D99231BA9692329 /* Pods_ULTURNative_Routes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ULTURNative_Routes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C79198259069FD0A3C525E1 /* Pods-ULTURNative-Routes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ULTURNative-Routes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ULTURNative-Routes/Pods-ULTURNative-Routes.debug.xcconfig"; sourceTree = "<group>"; };
 		B2C5C282799E1C67FCC8869A /* Pods-ULTURNative-RoutesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ULTURNative-RoutesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ULTURNative-RoutesTests/Pods-ULTURNative-RoutesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C93FC3F91F8832D600E19D10 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CE7AB6291F7EF93200BCC383 /* ULTURNative-Routes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ULTURNative-Routes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7AB62C1F7EF93200BCC383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE7AB62E1F7EF93200BCC383 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93FC3FA1F8832D600E19D10 /* MapKit.framework in Frameworks */,
 				ED3FDF189239C2A3DD4E5936 /* Pods_ULTURNative_Routes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,6 +95,7 @@
 		A35981ABD25D894FB0A4F776 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C93FC3F91F8832D600E19D10 /* MapKit.framework */,
 				8F4127894D99231BA9692329 /* Pods_ULTURNative_Routes.framework */,
 				7C4AAE162D3FB8D6F428C4CA /* Pods_ULTURNative_RoutesTests.framework */,
 				25589E27D15ACB035C920C9E /* Pods_ULTURNative_RoutesUITests.framework */,
@@ -243,6 +247,11 @@
 					CE7AB6281F7EF93200BCC383 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					CE7AB63C1F7EF93200BCC383 = {
 						CreatedOnToolsVersion = 9.0;
