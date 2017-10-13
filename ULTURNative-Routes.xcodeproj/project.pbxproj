@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11CDD7E91F905A37007EBF2F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11CDD7E81F905A37007EBF2F /* CoreLocation.framework */; };
 		16206800C2D7BF95555F7816 /* Pods_ULTURNative_RoutesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25589E27D15ACB035C920C9E /* Pods_ULTURNative_RoutesUITests.framework */; };
 		73FF996435DB06EF65E8950B /* Pods_ULTURNative_RoutesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4AAE162D3FB8D6F428C4CA /* Pods_ULTURNative_RoutesTests.framework */; };
 		C93FC3FA1F8832D600E19D10 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93FC3F91F8832D600E19D10 /* MapKit.framework */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		0714459A279ECBE01B18CDF3 /* Pods-ULTURNative-RoutesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ULTURNative-RoutesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ULTURNative-RoutesTests/Pods-ULTURNative-RoutesTests.release.xcconfig"; sourceTree = "<group>"; };
+		11CDD7E81F905A37007EBF2F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		18A8605AEC2B42739036FC4D /* Pods-ULTURNative-Routes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ULTURNative-Routes.release.xcconfig"; path = "Pods/Target Support Files/Pods-ULTURNative-Routes/Pods-ULTURNative-Routes.release.xcconfig"; sourceTree = "<group>"; };
 		25589E27D15ACB035C920C9E /* Pods_ULTURNative_RoutesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ULTURNative_RoutesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A65D7AD0D3C1F84EF447587 /* Pods-ULTURNative-RoutesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ULTURNative-RoutesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ULTURNative-RoutesUITests/Pods-ULTURNative-RoutesUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11CDD7E91F905A37007EBF2F /* CoreLocation.framework in Frameworks */,
 				C93FC3FA1F8832D600E19D10 /* MapKit.framework in Frameworks */,
 				ED3FDF189239C2A3DD4E5936 /* Pods_ULTURNative_Routes.framework in Frameworks */,
 			);
@@ -95,6 +98,7 @@
 		A35981ABD25D894FB0A4F776 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				11CDD7E81F905A37007EBF2F /* CoreLocation.framework */,
 				C93FC3F91F8832D600E19D10 /* MapKit.framework */,
 				8F4127894D99231BA9692329 /* Pods_ULTURNative_Routes.framework */,
 				7C4AAE162D3FB8D6F428C4CA /* Pods_ULTURNative_RoutesTests.framework */,
