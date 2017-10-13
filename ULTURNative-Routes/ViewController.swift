@@ -17,6 +17,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     @IBOutlet weak var speedLabel: UILabel!
     
+    
     let manager = CLLocationManager()
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
@@ -44,6 +45,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         manager.delegate = self
+        map.delegate = self
+        mapRoute()
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
@@ -58,24 +61,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     }
     
     func mapRoute(){
-        // 1.
-        map.delegate = self
-        
-        // 2.
-        let sourceLocation = CLLocationCoordinate2D(latitude: 40.759011, longitude: -73.984472)
-        let destinationLocation = CLLocationCoordinate2D(latitude: 40.748441, longitude: -73.985564)
-        
-        // 3.
-        let sourcePlacemark = MKPlacemark(coordinate: sourceLocation, addressDictionary: nil)
+
+        let sourceLocation = manager.location?.coordinate
+        let destinationLocation = CLLocationCoordinate2D(latitude: 49.2827, longitude: -123.1207)
+   
+        let sourcePlacemark = MKPlacemark(coordinate: sourceLocation!, addressDictionary: nil)
         let destinationPlacemark = MKPlacemark(coordinate: destinationLocation, addressDictionary: nil)
         
-        // 4.
         let sourceMapItem = MKMapItem(placemark: sourcePlacemark)
         let destinationMapItem = MKMapItem(placemark: destinationPlacemark)
         
-        // 5.
         let sourceAnnotation = MKPointAnnotation()
-        sourceAnnotation.title = "Times Square"
+        sourceAnnotation.title = "hello world"
         
         if let location = sourcePlacemark.location {
             sourceAnnotation.coordinate = location.coordinate
@@ -83,25 +80,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         
         
         let destinationAnnotation = MKPointAnnotation()
-        destinationAnnotation.title = "Empire State Building"
+        destinationAnnotation.title = "Vancouver"
         
         if let location = destinationPlacemark.location {
             destinationAnnotation.coordinate = location.coordinate
         }
         
-        // 6.
         self.map.showAnnotations([sourceAnnotation,destinationAnnotation], animated: true )
         
-        // 7.
         let directionRequest = MKDirectionsRequest()
         directionRequest.source = sourceMapItem
         directionRequest.destination = destinationMapItem
         directionRequest.transportType = .automobile
         
-        // Calculate the direction
         let directions = MKDirections(request: directionRequest)
         
-        // 8.
         directions.calculate {
             (response, error) -> Void in
             
@@ -116,8 +109,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             let route = response.routes[0]
             self.map.add((route.polyline), level: MKOverlayLevel.aboveRoads)
             
-            let rect = route.polyline.boundingMapRect
-            self.map.setRegion(MKCoordinateRegionForMapRect(rect), animated: true)
+            //let rect = route.polyline.boundingMapRect
+            //self.map.setRegion(MKCoordinateRegionForMapRect(rect), animated: true)
         }
     }
     
