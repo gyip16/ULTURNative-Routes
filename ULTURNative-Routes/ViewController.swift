@@ -24,7 +24,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     {
         let location = locations[0]
         //set the zoom
-        let span:MKCoordinateSpan = MKCoordinateSpanMake(0.01,0.01)
+        let span:MKCoordinateSpan = MKCoordinateSpanMake(0.001,0.001)
         
         let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
         
@@ -33,11 +33,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         //calculation convert location object to double type
         let vspeed=Double(location.speed)
         let speedh=round(vspeed*3.6)
-        speedLabel.text=String(speedh)+"  Km/H"
+        if(speedh<0){
+            speedLabel.text="0  km/h"}
+        else{
+            speedLabel.text=String(speedh)+"  km/h"
+        }
         
         self.map.showsUserLocation = true
-        
-        
         
     }
     
@@ -62,10 +64,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     func mapRoute(){
 
-        let sourceLocation = manager.location?.coordinate
-        let destinationLocation = CLLocationCoordinate2D(latitude: 49.2827, longitude: -123.1207)
+        let sourceLocation = CLLocationCoordinate2D(latitude: 49.257764, longitude: -123.107053)
+        let destinationLocation = CLLocationCoordinate2D(latitude: 49.258062, longitude: -123.107450)
    
-        let sourcePlacemark = MKPlacemark(coordinate: sourceLocation!, addressDictionary: nil)
+        let sourcePlacemark = MKPlacemark(coordinate: sourceLocation, addressDictionary: nil)
         let destinationPlacemark = MKPlacemark(coordinate: destinationLocation, addressDictionary: nil)
         
         let sourceMapItem = MKMapItem(placemark: sourcePlacemark)
