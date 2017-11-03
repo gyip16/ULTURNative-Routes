@@ -6,6 +6,7 @@ target 'ULTURNative-Routes' do
   use_frameworks!
 
   # Pods for ULTURNative-Routes
+  pod 'Mapbox-iOS-SDK', '~> 3.6'
 
   target 'ULTURNative-RoutesTests' do
     inherit! :search_paths
