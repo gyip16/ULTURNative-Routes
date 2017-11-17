@@ -11,7 +11,7 @@ import MapKit
 import CoreLocation
 import Mapbox
 import MapboxDirections
-import SwiftyJSON
+
 
 class ViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDelegate
 {
