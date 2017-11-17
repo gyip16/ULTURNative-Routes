@@ -11,9 +11,8 @@ import MapKit
 import CoreLocation
 import Mapbox
 import MapboxDirections
-import MapboxNavigation
 
-class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate
+class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, MGLMapViewDelegate
 {
     //this is map view
     @IBOutlet weak var map: MKMapView!
@@ -22,6 +21,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     
     let manager = CLLocationManager()
+    let directions = Directions.shared
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
     {
@@ -55,6 +55,58 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
+        
+        let mapView = MGLMapView(frame: view.bounds, styleURL: MGLStyle.darkStyleURL())
+        mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        mapView.setCenter(CLLocationCoordinate2D(latitude: 38.9131752, longitude: -77.0324047), zoomLevel: 9, animated: false)
+        view.addSubview(mapView)
+        
+        let waypoints = [
+            Waypoint(coordinate: CLLocationCoordinate2D(latitude: 38.9131752, longitude: -77.0324047), name: "Mapbox"),
+            Waypoint(coordinate: CLLocationCoordinate2D(latitude: 38.8977, longitude: -77.0365), name: "White House"),
+            ]
+        let options = RouteOptions(waypoints: waypoints, profileIdentifier: .automobileAvoidingTraffic)
+        options.includesSteps = true
+        
+        let task = directions.calculate(options) { (waypoints, routes, error) in
+            guard error == nil else {
+                print("Error calculating directions: \(error!)")
+                return
+            }
+            print("I love plz work: \(routes)  NO I HATE U NOW")
+            if let route = routes?.first, let leg = route.legs.first {
+                print("Route via \(leg):")
+                
+                let distanceFormatter = LengthFormatter()
+                let formattedDistance = distanceFormatter.string(fromMeters: route.distance)
+                
+                let travelTimeFormatter = DateComponentsFormatter()
+                travelTimeFormatter.unitsStyle = .short
+                let formattedTravelTime = travelTimeFormatter.string(from: route.expectedTravelTime)
+                
+                print("Distance: \(formattedDistance); ETA: \(formattedTravelTime!)")
+                
+                for step in leg.steps {
+                    print("\(step.instructions)")
+                    for intersection in step.intersections! {
+                        print("\(intersection.location)")
+                    }
+                    let formattedDistance = distanceFormatter.string(fromMeters: step.distance)
+                    print("— \(formattedDistance) —")
+                }
+                
+                if route.coordinateCount > 0 {
+                    // Convert the route’s coordinates into a polyline.
+                    var routeCoordinates = route.coordinates!
+                    let routeLine = MGLPolyline(coordinates: &routeCoordinates, count: route.coordinateCount)
+                    
+                    // Add the polyline to the map and fit the viewport to the polyline.
+                    mapView.addAnnotation(routeLine)
+                    mapView.setVisibleCoordinates(&routeCoordinates, count: route.coordinateCount, edgePadding: .zero, animated: true)
+                }
+            }
+        }
+        mapboxdirection();
         
         
 
@@ -119,12 +171,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         }
     }
     
-    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        let renderer = MKPolylineRenderer(overlay: overlay)
-        renderer.strokeColor = UIColor.red
-        renderer.lineWidth = 4.0
+    func mapboxdirection() {
+
         
-        return renderer
+
     }
     
 }
