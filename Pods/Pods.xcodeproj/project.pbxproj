@@ -7,61 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D931D50D86DD5D1221D6D7EDCE8B92E /* MBIntersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A083A622AE631232D243718BE5141CC6 /* MBIntersection.swift */; };
+		0D931D50D86DD5D1221D6D7EDCE8B92E /* MBIntersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84B7C9F0B861539D915E04EE093DCDC /* MBIntersection.swift */; };
 		11110B04A49586B44F513488F7EB9B8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286CAF8DB11369AC0C5624ADCCA73A68 /* Foundation.framework */; };
-		15742A7F291CE049161411D3C6BE6DA6 /* MBRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59192204FFF82BA5EA469C33F9297A2 /* MBRoute.swift */; };
-		180697F198261814BFE115134482FCD7 /* MBRouteOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D2064C4583A4FD93BFFE851601C3A /* MBRouteOptions.m */; };
-		1C021A214CEF19DA99D7F2BB87EC92D1 /* MBDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F951D35F60868400B68352AFAC01213 /* MBDirections.swift */; };
-		33EE5AB6260ACBABEC62A1D1B8DAB119 /* MBLaneIndication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A796536E7AB8E4D90DE667E5CB87ABE /* MBLaneIndication.swift */; };
-		3C856925E05BDCAEC92DD95B072EA892 /* Polyline-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 876F20B17F437CF825DED8B4D7F41EA6 /* Polyline-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E3F45D5E11F65683385B4A52F6838BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286CAF8DB11369AC0C5624ADCCA73A68 /* Foundation.framework */; };
-		4FAC3CDA416155A69B0699662F5AF3D7 /* MapboxDirections.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E1883387A3C726AB23673E261D1EEB5 /* MapboxDirections.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15742A7F291CE049161411D3C6BE6DA6 /* MBRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160A85A0472457ED20126C8A42C789D0 /* MBRoute.swift */; };
+		180697F198261814BFE115134482FCD7 /* MBRouteOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EFE0A661FD630ADEB1DE77E445B7E7 /* MBRouteOptions.m */; };
+		1C021A214CEF19DA99D7F2BB87EC92D1 /* MBDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF19AD4A1A451A52C9166D673B4750 /* MBDirections.swift */; };
+		33EE5AB6260ACBABEC62A1D1B8DAB119 /* MBLaneIndication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBDFC92EB8FDADD90E6062F51995FD1 /* MBLaneIndication.swift */; };
+		3C856925E05BDCAEC92DD95B072EA892 /* Polyline-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A85D80522CEEE6191723CFAAC971E4A4 /* Polyline-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FAC3CDA416155A69B0699662F5AF3D7 /* MapboxDirections.h in Headers */ = {isa = PBXBuildFile; fileRef = F780A30138B9846888767B4151587271 /* MapboxDirections.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5674119F940440F612E5034903D8ADBC /* Pods-ULTURNative-RoutesTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70366900B1D2F3D17C450AEEACEC6046 /* Pods-ULTURNative-RoutesTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56C95A4AD45E9D75C0E37843F9B59B81 /* MBWaypoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42D8E271DFEFA3FFC0E8F5A5320C319 /* MBWaypoint.swift */; };
+		56C95A4AD45E9D75C0E37843F9B59B81 /* MBWaypoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4080ED8672F69201E1CD4F976494E0 /* MBWaypoint.swift */; };
+		5E67B05EE9432733CC2FF5E0692D6C97 /* Pods-ULTURNative-Routes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B166DEC9D2E5BCACF2B8FC22DAB587D /* Pods-ULTURNative-Routes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FF086BD7181ABC25FB682BABCEB43A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286CAF8DB11369AC0C5624ADCCA73A68 /* Foundation.framework */; };
-		6DA05B5AD7C60D498B3F13EF5550E933 /* MBSpokenInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE1B9E96BC5E0E87C76429A93BDA266 /* MBSpokenInstruction.swift */; };
+		6DA05B5AD7C60D498B3F13EF5550E933 /* MBSpokenInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99BA2F1B8AA8923F9E6026F446CDC99 /* MBSpokenInstruction.swift */; };
 		6E9BD3D411653C7FC7DDA9AA3FF9A478 /* Pods-ULTURNative-RoutesUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02D03E3CFBD131DC4CF93E315ADB8161 /* Pods-ULTURNative-RoutesUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79A1435DC9C2C760AA29ADF9F6807FE6 /* MapboxDirections.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C345D6645FAC2823CBC741B5F872AB3 /* MapboxDirections.swift-dummy.m */; };
+		79A1435DC9C2C760AA29ADF9F6807FE6 /* MapboxDirections.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDC51815B98801AC13488C7E18C7F56 /* MapboxDirections.swift-dummy.m */; };
 		883AD1F341F673E7AE26E1AE42B0CD82 /* Pods-ULTURNative-RoutesUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0948C64F070CA7F8D0E59656D1EB0BFC /* Pods-ULTURNative-RoutesUITests-dummy.m */; };
-		8D3E50DC8CEB50739B0B874A9FFCD921 /* MBRouteOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0B7D8D459BC3CB04F1458523847EB4 /* MBRouteOptions.swift */; };
-		8D4C39C551B2BDC29CB235F697D3D02F /* Polyline.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F1C7A9240C8102D8EBAC33AFC5D0E99 /* Polyline.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		935925633A9B55F1E02B5827E89153B4 /* Pods-ULTURNative-Routes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F319F255891DA5B532DAA39BF54E8594 /* Pods-ULTURNative-Routes-dummy.m */; };
-		9509E769BFCB60B7E1271A42FC76F731 /* Polyline-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D9174EC39C4FBC0AAF7B16DADB6770 /* Polyline-dummy.m */; };
-		99061152375C2B651A66AD2D3A629328 /* MBRouteStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1481BFD173FA0195674AB8EB5D7E5F90 /* MBRouteStep.swift */; };
-		9A8F1F83F0E8FD760049977055636941 /* Pods-ULTURNative-Routes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B166DEC9D2E5BCACF2B8FC22DAB587D /* Pods-ULTURNative-Routes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9EDA8D290A1E5C7DC34524137D597264 /* Polyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A44E8AFEA05C998736B1EDD03103D00 /* Polyline.swift */; };
-		B0B0D7E24EEB521F298FC40CFE9EB28B /* MBAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538C0BD8D6724A5BAE939C689ED4B987 /* MBAttribute.swift */; };
-		B7F7455A1BF8B104BE016145077CF8C9 /* MBRoadClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7210E9C0A6CCCE658BBB515A3E839E83 /* MBRoadClasses.swift */; };
-		BB84655A357C1BC8C133C10904A39579 /* MBAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = AB03E9A1BDAB80BF78215BD500CA8DEB /* MBAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D3E50DC8CEB50739B0B874A9FFCD921 /* MBRouteOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7866AEADAC6B9F895DEEAD68A33386 /* MBRouteOptions.swift */; };
+		8D4C39C551B2BDC29CB235F697D3D02F /* Polyline.h in Headers */ = {isa = PBXBuildFile; fileRef = 31CE537AF1ED0F64A9AFE2CA3E0BFC1A /* Polyline.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9509E769BFCB60B7E1271A42FC76F731 /* Polyline-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 046E5B821A2679EEBF467B4DD3E3A22C /* Polyline-dummy.m */; };
+		99061152375C2B651A66AD2D3A629328 /* MBRouteStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D5EED5B96285BB24879233FD1C158A /* MBRouteStep.swift */; };
+		9EDA8D290A1E5C7DC34524137D597264 /* Polyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C021AFB2FB5B6E8098338ACA63BECC69 /* Polyline.swift */; };
+		A5299ACC8285822048DD9BA61A36D5A0 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D07B82A2BD2F36B51E8DF84DB23C2360 /* SwiftyJSON-dummy.m */; };
+		AE3FE40D136ACF0E67056FB498DECE4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286CAF8DB11369AC0C5624ADCCA73A68 /* Foundation.framework */; };
+		B0B0D7E24EEB521F298FC40CFE9EB28B /* MBAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28649A06E2DDC57BE035A31FBE286F /* MBAttribute.swift */; };
+		B7F7455A1BF8B104BE016145077CF8C9 /* MBRoadClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15239775AD31590142CFD1F5A571E4C8 /* MBRoadClasses.swift */; };
+		BB84655A357C1BC8C133C10904A39579 /* MBAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F7A6C227333F4AAC9467A84221AD7E9 /* MBAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD6B058A693052C2CF094D52D560BDF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286CAF8DB11369AC0C5624ADCCA73A68 /* Foundation.framework */; };
-		BE30E3BF6D4FB49FF24C441E6B13E2D6 /* MBRouteLeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F5D54873BFE21D33526AE0BB3DB5D /* MBRouteLeg.swift */; };
-		C2E1F81056358F001AB3F59F8655F522 /* MBLane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A76775D9AC40151E3FD5D7440517E5B /* MBLane.swift */; };
-		C880CB410A38F6DF0C0CF00A47E7EBBB /* MBRoadClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC74CB16BFE9329DA4866AA41443133 /* MBRoadClasses.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CCD52713617900365D71C1264187B564 /* MBRouteOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = BC1D253DD15398C57AC3910720971330 /* MBRouteOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE8BEEB0227F59A47688488F51730589 /* MBCongestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE13ACB846ADE649230257494ADE19 /* MBCongestion.swift */; };
+		BE30E3BF6D4FB49FF24C441E6B13E2D6 /* MBRouteLeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B053E34ACE8BB4D074BF2D6896F9B3 /* MBRouteLeg.swift */; };
+		C2E1F81056358F001AB3F59F8655F522 /* MBLane.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BEF82C431CEE413B5128E909621FC6 /* MBLane.swift */; };
+		C880CB410A38F6DF0C0CF00A47E7EBBB /* MBRoadClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = 26BE64F5D95EADA9587E52A0C6EA223D /* MBRoadClasses.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCD52713617900365D71C1264187B564 /* MBRouteOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A04C15D3F9D67D7DB960CBBD3752628 /* MBRouteOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE7DCEFFC5FB4BF127B02EFE130EA1E6 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE609524F0FAED5C5043D4BCAF2A340 /* SwiftyJSON.swift */; };
+		CE8BEEB0227F59A47688488F51730589 /* MBCongestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF782C96CCE614F9CF873B29604212C /* MBCongestion.swift */; };
 		D027295D4526FEBA4C9ECFCA65C1A2A4 /* Pods-ULTURNative-RoutesTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E609EBF599C8AD5514B6E15004282E0 /* Pods-ULTURNative-RoutesTests-dummy.m */; };
+		D46F18E6EC1A2C27C342768B5FC5E953 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286CAF8DB11369AC0C5624ADCCA73A68 /* Foundation.framework */; };
+		D539999034B2DD2B013C51339F284447 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AC3AA96E220A9FF096D0F879E53807F /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DDF3AC45A3941869412ADD78DC1068F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286CAF8DB11369AC0C5624ADCCA73A68 /* Foundation.framework */; };
 		E485CE817D3681920D85B15DC40FB053 /* Polyline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327512FF927EC475EE414D049567E054 /* Polyline.framework */; };
-		FB2BC470C49531CE3B35C3643666691E /* MBLaneIndication.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CEB94A5C072921E8624ACE4D46A2AF2 /* MBLaneIndication.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC15DAA0419707A0E1516F3CFD3A9888 /* MapboxDirections.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90526992EEFE995B7901BD0E9E7B53DD /* MapboxDirections.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB2BC470C49531CE3B35C3643666691E /* MBLaneIndication.h in Headers */ = {isa = PBXBuildFile; fileRef = C927C79A3C778679DB27541F5B5D6C91 /* MBLaneIndication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC15DAA0419707A0E1516F3CFD3A9888 /* MapboxDirections.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5281BC127A485EAA05839E23F468E84F /* MapboxDirections.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCE78E167EE2C665044B778F6369117E /* Pods-ULTURNative-Routes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F319F255891DA5B532DAA39BF54E8594 /* Pods-ULTURNative-Routes-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5D4566024599E00E4ECEC2915E2E49FE /* PBXContainerItemProxy */ = {
+		2EA8DBC74F437DE9CF64CA9C05BD8082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE86B396DE46AB10418FBCCACB7BF73B;
+			remoteInfo = SwiftyJSON;
+		};
+		6BD4BE3948C797479A9979184F56CB11 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 511E7E4308C72432454FF2130B6BF014;
 			remoteInfo = MapboxDirections.swift;
 		};
-		A988694AF1CEDAC67F1271949E19C3C8 /* PBXContainerItemProxy */ = {
+		C77447EF4B6B1F17E29E8E34C5112B01 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1CF51137669D074ECEFAE2849DEF84FF;
 			remoteInfo = Polyline;
 		};
-		C77447EF4B6B1F17E29E8E34C5112B01 /* PBXContainerItemProxy */ = {
+		FFAA55C1FC52BB690EF0E9BFCF3D4ABC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -73,19 +84,36 @@
 /* Begin PBXFileReference section */
 		00790861EDC8905172FA28AC695784BB /* Pods-ULTURNative-Routes.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ULTURNative-Routes.modulemap"; sourceTree = "<group>"; };
 		02D03E3CFBD131DC4CF93E315ADB8161 /* Pods-ULTURNative-RoutesUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ULTURNative-RoutesUITests-umbrella.h"; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		0597476EBAE273F6FEF4B7881A4FC1E2 /* Polyline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Polyline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0948C64F070CA7F8D0E59656D1EB0BFC /* Pods-ULTURNative-RoutesUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ULTURNative-RoutesUITests-dummy.m"; sourceTree = "<group>"; };
 		0A387B953137D39B9117D9A762F67C40 /* Pods_ULTURNative_Routes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ULTURNative_Routes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E1883387A3C726AB23673E261D1EEB5 /* MapboxDirections.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MapboxDirections.h; path = MapboxDirections/MapboxDirections.h; sourceTree = "<group>"; };
 		0F1D16512BE444921A44D3E7181BE25C /* Pods-ULTURNative-RoutesTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ULTURNative-RoutesTests.modulemap"; sourceTree = "<group>"; };
 		1481BFD173FA0195674AB8EB5D7E5F90 /* MBRouteStep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRouteStep.swift; path = MapboxDirections/MBRouteStep.swift; sourceTree = "<group>"; };
+=======
+		046E5B821A2679EEBF467B4DD3E3A22C /* Polyline-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Polyline-dummy.m"; sourceTree = "<group>"; };
+		0948C64F070CA7F8D0E59656D1EB0BFC /* Pods-ULTURNative-RoutesUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ULTURNative-RoutesUITests-dummy.m"; sourceTree = "<group>"; };
+		096E15A28DC0103DD6CB2EE459184D87 /* MapboxDirections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapboxDirections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C08652E1D6E74C4090CA159A1B8F6FD /* MapboxDirections.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxDirections.swift-prefix.pch"; sourceTree = "<group>"; };
+		0F1D16512BE444921A44D3E7181BE25C /* Pods-ULTURNative-RoutesTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ULTURNative-RoutesTests.modulemap"; sourceTree = "<group>"; };
+		0F7A6C227333F4AAC9467A84221AD7E9 /* MBAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBAttribute.h; path = MapboxDirections/MBAttribute.h; sourceTree = "<group>"; };
+		15239775AD31590142CFD1F5A571E4C8 /* MBRoadClasses.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRoadClasses.swift; path = MapboxDirections/MBRoadClasses.swift; sourceTree = "<group>"; };
+		160A85A0472457ED20126C8A42C789D0 /* MBRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRoute.swift; path = MapboxDirections/MBRoute.swift; sourceTree = "<group>"; };
+		1AC3AA96E220A9FF096D0F879E53807F /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+>>>>>>> 36329f214863ea120c06ba775a91289276bd9c7a
 		1B75A6126FB3B368A109C733F331E2C3 /* Pods-ULTURNative-RoutesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ULTURNative-RoutesTests.release.xcconfig"; sourceTree = "<group>"; };
-		1C345D6645FAC2823CBC741B5F872AB3 /* MapboxDirections.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MapboxDirections.swift-dummy.m"; sourceTree = "<group>"; };
-		1E62E292692E6E64EBA6504BE8B166E0 /* Polyline-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Polyline-prefix.pch"; sourceTree = "<group>"; };
 		1F1F70D57E16C4827614CE85F284BD3F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26BE64F5D95EADA9587E52A0C6EA223D /* MBRoadClasses.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBRoadClasses.h; path = MapboxDirections/MBRoadClasses.h; sourceTree = "<group>"; };
+		280A472B56EED1EE6DE8DBD5DBAA9580 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		286CAF8DB11369AC0C5624ADCCA73A68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2E93BCBFEFB7A3372DB6CA3B9D1345D4 /* Pods_ULTURNative_RoutesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ULTURNative_RoutesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30B053E34ACE8BB4D074BF2D6896F9B3 /* MBRouteLeg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRouteLeg.swift; path = MapboxDirections/MBRouteLeg.swift; sourceTree = "<group>"; };
+		31CE537AF1ED0F64A9AFE2CA3E0BFC1A /* Polyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Polyline.h; path = Polyline/Polyline.h; sourceTree = "<group>"; };
 		327512FF927EC475EE414D049567E054 /* Polyline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Polyline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		346ABA81965B4C00FAB7645B1B4962A7 /* MapboxDirections.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapboxDirections.swift.xcconfig; sourceTree = "<group>"; };
 		34FF346386DEABDA9246D8DCBAC51CD7 /* Pods-ULTURNative-RoutesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ULTURNative-RoutesTests.debug.xcconfig"; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		3783300673382B4DFCD9108D848B72C5 /* Pods_ULTURNative_RoutesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ULTURNative_RoutesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		426C332D260A42F4DCE1D6068A720141 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A796536E7AB8E4D90DE667E5CB87ABE /* MBLaneIndication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBLaneIndication.swift; path = MapboxDirections/MBLaneIndication.swift; sourceTree = "<group>"; };
@@ -99,50 +127,83 @@
 		6CDA05AB1932E12270967DD742EF3A40 /* MapboxDirections.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MapboxDirections.swift.modulemap; sourceTree = "<group>"; };
 		6D0B7D8D459BC3CB04F1458523847EB4 /* MBRouteOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRouteOptions.swift; path = MapboxDirections/MBRouteOptions.swift; sourceTree = "<group>"; };
 		6E2F5D54873BFE21D33526AE0BB3DB5D /* MBRouteLeg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRouteLeg.swift; path = MapboxDirections/MBRouteLeg.swift; sourceTree = "<group>"; };
+=======
+		426C332D260A42F4DCE1D6068A720141 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47D5EED5B96285BB24879233FD1C158A /* MBRouteStep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRouteStep.swift; path = MapboxDirections/MBRouteStep.swift; sourceTree = "<group>"; };
+		4A04C15D3F9D67D7DB960CBBD3752628 /* MBRouteOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBRouteOptions.h; path = MapboxDirections/MBRouteOptions.h; sourceTree = "<group>"; };
+		4DC980F126CAA71BAD374A43B173B9D6 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F047221721E7918A1B7BB04FE4E0034 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F5674F0A7A408C1F33A798F8CA13D6B /* Polyline.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Polyline.modulemap; sourceTree = "<group>"; };
+		4F7866AEADAC6B9F895DEEAD68A33386 /* MBRouteOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRouteOptions.swift; path = MapboxDirections/MBRouteOptions.swift; sourceTree = "<group>"; };
+		5281BC127A485EAA05839E23F468E84F /* MapboxDirections.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxDirections.swift-umbrella.h"; sourceTree = "<group>"; };
+		57EA6404017C678AECCEF1788FDFAA58 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		5D993258EC8AA7A3BBABA208D9BE82EE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6241521D974E6802D9757A05B27FAC4F /* Pods-ULTURNative-RoutesTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ULTURNative-RoutesTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		68ED1E1023C1754E55EB7F00FDCE9150 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+>>>>>>> 36329f214863ea120c06ba775a91289276bd9c7a
 		70366900B1D2F3D17C450AEEACEC6046 /* Pods-ULTURNative-RoutesTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ULTURNative-RoutesTests-umbrella.h"; sourceTree = "<group>"; };
-		7210E9C0A6CCCE658BBB515A3E839E83 /* MBRoadClasses.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRoadClasses.swift; path = MapboxDirections/MBRoadClasses.swift; sourceTree = "<group>"; };
+		7386D586B9C49B15EC73203DB538AB6A /* Pods_ULTURNative_RoutesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ULTURNative_RoutesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		792001A3BDA8C3249B10B247F2814D3F /* Pods-ULTURNative-Routes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ULTURNative-Routes.debug.xcconfig"; sourceTree = "<group>"; };
-		794083345A35980F1F0371E9D116522F /* Polyline.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Polyline.xcconfig; sourceTree = "<group>"; };
-		7CEB94A5C072921E8624ACE4D46A2AF2 /* MBLaneIndication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBLaneIndication.h; path = MapboxDirections/MBLaneIndication.h; sourceTree = "<group>"; };
+		7F9DAC85A35C64C379FC31E99B60C2AB /* Polyline.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Polyline.xcconfig; sourceTree = "<group>"; };
+		7FBDFC92EB8FDADD90E6062F51995FD1 /* MBLaneIndication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBLaneIndication.swift; path = MapboxDirections/MBLaneIndication.swift; sourceTree = "<group>"; };
 		80E39A1D2481F84651D590858FE448A0 /* Pods-ULTURNative-RoutesUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ULTURNative-RoutesUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		876F20B17F437CF825DED8B4D7F41EA6 /* Polyline-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Polyline-umbrella.h"; sourceTree = "<group>"; };
+		82DF7E548056BAAA462F6A5F9E902E87 /* Polyline-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Polyline-prefix.pch"; sourceTree = "<group>"; };
 		89F7D773F8F3ED6BAB6963926F8800D0 /* Pods-ULTURNative-Routes-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ULTURNative-Routes-acknowledgements.markdown"; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		8A76775D9AC40151E3FD5D7440517E5B /* MBLane.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBLane.swift; path = MapboxDirections/MBLane.swift; sourceTree = "<group>"; };
 		8F951D35F60868400B68352AFAC01213 /* MBDirections.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBDirections.swift; path = MapboxDirections/MBDirections.swift; sourceTree = "<group>"; };
 		90526992EEFE995B7901BD0E9E7B53DD /* MapboxDirections.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxDirections.swift-umbrella.h"; sourceTree = "<group>"; };
 		92CDE02B0E19E7B5DF116E4E68E73189 /* Polyline.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Polyline.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+=======
+		8DE609524F0FAED5C5043D4BCAF2A340 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93AC2A1192F982267402613210B427EC /* Pods_ULTURNative_Routes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ULTURNative_Routes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95DF19AD4A1A451A52C9166D673B4750 /* MBDirections.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBDirections.swift; path = MapboxDirections/MBDirections.swift; sourceTree = "<group>"; };
+>>>>>>> 36329f214863ea120c06ba775a91289276bd9c7a
 		9B166DEC9D2E5BCACF2B8FC22DAB587D /* Pods-ULTURNative-Routes-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ULTURNative-Routes-umbrella.h"; sourceTree = "<group>"; };
 		9E609EBF599C8AD5514B6E15004282E0 /* Pods-ULTURNative-RoutesTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ULTURNative-RoutesTests-dummy.m"; sourceTree = "<group>"; };
-		9F1C7A9240C8102D8EBAC33AFC5D0E99 /* Polyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Polyline.h; path = Polyline/Polyline.h; sourceTree = "<group>"; };
-		A083A622AE631232D243718BE5141CC6 /* MBIntersection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBIntersection.swift; path = MapboxDirections/MBIntersection.swift; sourceTree = "<group>"; };
-		A2D9174EC39C4FBC0AAF7B16DADB6770 /* Polyline-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Polyline-dummy.m"; sourceTree = "<group>"; };
 		A7D87BE92EBE4FC4AEDBD032956E748D /* Pods-ULTURNative-Routes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ULTURNative-Routes.release.xcconfig"; sourceTree = "<group>"; };
 		A810878D36EFE84285603EB8EAC2BF9E /* Pods-ULTURNative-RoutesTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ULTURNative-RoutesTests-frameworks.sh"; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		AADE13ACB846ADE649230257494ADE19 /* MBCongestion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBCongestion.swift; path = MapboxDirections/MBCongestion.swift; sourceTree = "<group>"; };
 		AB03E9A1BDAB80BF78215BD500CA8DEB /* MBAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBAttribute.h; path = MapboxDirections/MBAttribute.h; sourceTree = "<group>"; };
 		AF3418ADE361276E495B4484F5E10460 /* Pods-ULTURNative-RoutesUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ULTURNative-RoutesUITests.modulemap"; sourceTree = "<group>"; };
 		B800D7D20E5388193C5492E32E823AA3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC1D253DD15398C57AC3910720971330 /* MBRouteOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBRouteOptions.h; path = MapboxDirections/MBRouteOptions.h; sourceTree = "<group>"; };
 		BCC74CB16BFE9329DA4866AA41443133 /* MBRoadClasses.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBRoadClasses.h; path = MapboxDirections/MBRoadClasses.h; sourceTree = "<group>"; };
+=======
+		A85D80522CEEE6191723CFAAC971E4A4 /* Polyline-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Polyline-umbrella.h"; sourceTree = "<group>"; };
+		AB4080ED8672F69201E1CD4F976494E0 /* MBWaypoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBWaypoint.swift; path = MapboxDirections/MBWaypoint.swift; sourceTree = "<group>"; };
+		AF3418ADE361276E495B4484F5E10460 /* Pods-ULTURNative-RoutesUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ULTURNative-RoutesUITests.modulemap"; sourceTree = "<group>"; };
+		B6EFE0A661FD630ADEB1DE77E445B7E7 /* MBRouteOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBRouteOptions.m; path = MapboxDirections/MBRouteOptions.m; sourceTree = "<group>"; };
+		B71495F569F467CBEA2EFE8FF23852A1 /* MapboxDirections.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MapboxDirections.swift.modulemap; sourceTree = "<group>"; };
+		B96227270E725A5D48D3891A58ADA04D /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		B99BA2F1B8AA8923F9E6026F446CDC99 /* MBSpokenInstruction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBSpokenInstruction.swift; path = MapboxDirections/MBSpokenInstruction.swift; sourceTree = "<group>"; };
+>>>>>>> 36329f214863ea120c06ba775a91289276bd9c7a
 		BE928FA0322FC49934290A5506E121CF /* Pods-ULTURNative-Routes-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ULTURNative-Routes-resources.sh"; sourceTree = "<group>"; };
-		C0549944EAF61C694866988A06B0F5DD /* MapboxDirections.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapboxDirections.swift.xcconfig; sourceTree = "<group>"; };
+		BEC901AF6CDB4EFEB118FEBDE018BAC9 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = dynamic/Mapbox.framework; sourceTree = "<group>"; };
+		C021AFB2FB5B6E8098338ACA63BECC69 /* Polyline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Polyline.swift; path = Polyline/Polyline.swift; sourceTree = "<group>"; };
 		C3D90FF8AFFA76E1D4E313C0E06A6754 /* Pods-ULTURNative-Routes-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ULTURNative-Routes-acknowledgements.plist"; sourceTree = "<group>"; };
 		C651E9407FCA154725924B411997915E /* Pods-ULTURNative-RoutesTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ULTURNative-RoutesTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C927C79A3C778679DB27541F5B5D6C91 /* MBLaneIndication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBLaneIndication.h; path = MapboxDirections/MBLaneIndication.h; sourceTree = "<group>"; };
 		C9CC1E9D9CBD368141B8D1CE318C851D /* Pods-ULTURNative-RoutesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ULTURNative-RoutesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CA9FB0DE22310870A0D8A88A9613367E /* Pods-ULTURNative-RoutesUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ULTURNative-RoutesUITests-resources.sh"; sourceTree = "<group>"; };
 		CC6191FAAF2D0E241AD9383782C55FBE /* Pods-ULTURNative-RoutesUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ULTURNative-RoutesUITests-frameworks.sh"; sourceTree = "<group>"; };
-		CCE1B9E96BC5E0E87C76429A93BDA266 /* MBSpokenInstruction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBSpokenInstruction.swift; path = MapboxDirections/MBSpokenInstruction.swift; sourceTree = "<group>"; };
+		D07B82A2BD2F36B51E8DF84DB23C2360 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		D1FD50459DD3AA40E027D3B13633305E /* Pods-ULTURNative-Routes-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ULTURNative-Routes-frameworks.sh"; sourceTree = "<group>"; };
+		D2F5B8252C8207409A9BFF7BE3000A3A /* Polyline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Polyline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6E0379C380A42C415ECD1DE0755C0D0 /* Pods-ULTURNative-RoutesUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ULTURNative-RoutesUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D84B7C9F0B861539D915E04EE093DCDC /* MBIntersection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBIntersection.swift; path = MapboxDirections/MBIntersection.swift; sourceTree = "<group>"; };
 		DD7BC2D3E20647F409F84A830552D532 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E42D8E271DFEFA3FFC0E8F5A5320C319 /* MBWaypoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBWaypoint.swift; path = MapboxDirections/MBWaypoint.swift; sourceTree = "<group>"; };
-		E4BD25E8291DBF60D9DB38A3629BAC16 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = dynamic/Mapbox.framework; sourceTree = "<group>"; };
-		E59192204FFF82BA5EA469C33F9297A2 /* MBRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRoute.swift; path = MapboxDirections/MBRoute.swift; sourceTree = "<group>"; };
-		E5AAF811CB0FC2EE36E8C2F3221D39A3 /* MapboxDirections.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxDirections.swift-prefix.pch"; sourceTree = "<group>"; };
+		EF28649A06E2DDC57BE035A31FBE286F /* MBAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBAttribute.swift; path = MapboxDirections/MBAttribute.swift; sourceTree = "<group>"; };
+		EFDC51815B98801AC13488C7E18C7F56 /* MapboxDirections.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MapboxDirections.swift-dummy.m"; sourceTree = "<group>"; };
 		F319F255891DA5B532DAA39BF54E8594 /* Pods-ULTURNative-Routes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ULTURNative-Routes-dummy.m"; sourceTree = "<group>"; };
+		F780A30138B9846888767B4151587271 /* MapboxDirections.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MapboxDirections.h; path = MapboxDirections/MapboxDirections.h; sourceTree = "<group>"; };
+		F8BEF82C431CEE413B5128E909621FC6 /* MBLane.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBLane.swift; path = MapboxDirections/MBLane.swift; sourceTree = "<group>"; };
 		FAEDB125B6A9F132DF7E6CD746115F2C /* Pods-ULTURNative-RoutesTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ULTURNative-RoutesTests-resources.sh"; sourceTree = "<group>"; };
 		FE97F008E584F2417957468315DBBB47 /* Pods-ULTURNative-RoutesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ULTURNative-RoutesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FFF782C96CCE614F9CF873B29604212C /* MBCongestion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBCongestion.swift; path = MapboxDirections/MBCongestion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,11 +232,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B09ED80ECF6BAABA591FA2B63427B26 /* Frameworks */ = {
+		49F571E91F5FFA39E63B0A49CDDE6E39 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E3F45D5E11F65683385B4A52F6838BE /* Foundation.framework in Frameworks */,
+				AE3FE40D136ACF0E67056FB498DECE4D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,19 +248,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8688AE89F2CC1C2380D1596F79D5F9BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D46F18E6EC1A2C27C342768B5FC5E953 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		26DF9F1B11853AE949FFC3638F452E8F /* Products */ = {
+		065659CD83D62CB2A3430F3AD47B820E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				550E293EA086A75DF0A3255BA970E1A2 /* MapboxDirections.framework */,
-				0A387B953137D39B9117D9A762F67C40 /* Pods_ULTURNative_Routes.framework */,
-				3783300673382B4DFCD9108D848B72C5 /* Pods_ULTURNative_RoutesTests.framework */,
-				5DA50E3373EF12A15B6E09C414FC0DA4 /* Pods_ULTURNative_RoutesUITests.framework */,
-				0597476EBAE273F6FEF4B7881A4FC1E2 /* Polyline.framework */,
+				BEC901AF6CDB4EFEB118FEBDE018BAC9 /* Mapbox.framework */,
 			);
-			name = Products;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17BDDE0762C0F7411CC246990D65C208 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				8DE609524F0FAED5C5043D4BCAF2A340 /* SwiftyJSON.swift */,
+				9122D783B3B41F7AAEEE461AB2CE2BEB /* Support Files */,
+			);
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 		272BFF393F257A24C04927C8126B57CA /* Targets Support Files */ = {
@@ -209,15 +283,11 @@
 				B3E3DFBB3986DCB93E1A419FF8881957 /* Pods-ULTURNative-RoutesTests */,
 				3DE63A4D828074D22C85A8D0BFC10E61 /* Pods-ULTURNative-RoutesUITests */,
 			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		3BE8C60C4FF088C585222CB279D67669 /* Mapbox-iOS-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				486229402C238093D9FA6DB5E3BC51CF /* Frameworks */,
-			);
+<<<<<<< HEAD
 			path = "Mapbox-iOS-SDK";
+=======
+			name = "Targets Support Files";
+>>>>>>> 36329f214863ea120c06ba775a91289276bd9c7a
 			sourceTree = "<group>";
 		};
 		3DE63A4D828074D22C85A8D0BFC10E61 /* Pods-ULTURNative-RoutesUITests */ = {
@@ -238,12 +308,15 @@
 			path = "Target Support Files/Pods-ULTURNative-RoutesUITests";
 			sourceTree = "<group>";
 		};
-		486229402C238093D9FA6DB5E3BC51CF /* Frameworks */ = {
+		4CF15BC30C917C63C7302E6B0F2B517D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E4BD25E8291DBF60D9DB38A3629BAC16 /* Mapbox.framework */,
+				E3F097B3418C90B0B1102ED16FCE7C80 /* Mapbox-iOS-SDK */,
+				90CFF365BCE4CC23B54A20DBDD08D0B7 /* MapboxDirections.swift */,
+				BB6002A4FFE121C9E09AF643AD96A1FD /* Polyline */,
+				17BDDE0762C0F7411CC246990D65C208 /* SwiftyJSON */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		5F1C4BCD43ADB7907EBAF503FDB7A807 /* Pods-ULTURNative-Routes */ = {
@@ -264,31 +337,22 @@
 			path = "Target Support Files/Pods-ULTURNative-Routes";
 			sourceTree = "<group>";
 		};
-		64B73C77E3F97118F361D2C6254A148B /* MapboxDirections.swift */ = {
+		75B71915D045883B61D3B9B92E58E287 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0E1883387A3C726AB23673E261D1EEB5 /* MapboxDirections.h */,
-				AB03E9A1BDAB80BF78215BD500CA8DEB /* MBAttribute.h */,
-				538C0BD8D6724A5BAE939C689ED4B987 /* MBAttribute.swift */,
-				AADE13ACB846ADE649230257494ADE19 /* MBCongestion.swift */,
-				8F951D35F60868400B68352AFAC01213 /* MBDirections.swift */,
-				A083A622AE631232D243718BE5141CC6 /* MBIntersection.swift */,
-				8A76775D9AC40151E3FD5D7440517E5B /* MBLane.swift */,
-				7CEB94A5C072921E8624ACE4D46A2AF2 /* MBLaneIndication.h */,
-				4A796536E7AB8E4D90DE667E5CB87ABE /* MBLaneIndication.swift */,
-				BCC74CB16BFE9329DA4866AA41443133 /* MBRoadClasses.h */,
-				7210E9C0A6CCCE658BBB515A3E839E83 /* MBRoadClasses.swift */,
-				E59192204FFF82BA5EA469C33F9297A2 /* MBRoute.swift */,
-				6E2F5D54873BFE21D33526AE0BB3DB5D /* MBRouteLeg.swift */,
-				BC1D253DD15398C57AC3910720971330 /* MBRouteOptions.h */,
-				4E0D2064C4583A4FD93BFFE851601C3A /* MBRouteOptions.m */,
-				6D0B7D8D459BC3CB04F1458523847EB4 /* MBRouteOptions.swift */,
-				1481BFD173FA0195674AB8EB5D7E5F90 /* MBRouteStep.swift */,
-				CCE1B9E96BC5E0E87C76429A93BDA266 /* MBSpokenInstruction.swift */,
-				E42D8E271DFEFA3FFC0E8F5A5320C319 /* MBWaypoint.swift */,
-				9FD5608A9DDC3E188CC808A56AC0A6C5 /* Support Files */,
+				5D993258EC8AA7A3BBABA208D9BE82EE /* Info.plist */,
+				4F5674F0A7A408C1F33A798F8CA13D6B /* Polyline.modulemap */,
+				7F9DAC85A35C64C379FC31E99B60C2AB /* Polyline.xcconfig */,
+				046E5B821A2679EEBF467B4DD3E3A22C /* Polyline-dummy.m */,
+				82DF7E548056BAAA462F6A5F9E902E87 /* Polyline-prefix.pch */,
+				A85D80522CEEE6191723CFAAC971E4A4 /* Polyline-umbrella.h */,
 			);
+<<<<<<< HEAD
 			path = MapboxDirections.swift;
+=======
+			name = "Support Files";
+			path = "../Target Support Files/Polyline";
+>>>>>>> 36329f214863ea120c06ba775a91289276bd9c7a
 			sourceTree = "<group>";
 		};
 		7D52FF8A91DDA1BFCCFCDED105969F1C /* Frameworks */ = {
@@ -305,8 +369,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				7D52FF8A91DDA1BFCCFCDED105969F1C /* Frameworks */,
-				9BECD978D4027041F5FC424141D87CEE /* Pods */,
-				26DF9F1B11853AE949FFC3638F452E8F /* Products */,
+				4CF15BC30C917C63C7302E6B0F2B517D /* Pods */,
+				9A6D731633A132E9959A3388F3C1F539 /* Products */,
 				272BFF393F257A24C04927C8126B57CA /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -319,52 +383,62 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		92E96C60749711536F8B2A44B3AB7F56 /* Polyline */ = {
+		90CFF365BCE4CC23B54A20DBDD08D0B7 /* MapboxDirections.swift */ = {
 			isa = PBXGroup;
 			children = (
-				9F1C7A9240C8102D8EBAC33AFC5D0E99 /* Polyline.h */,
-				5A44E8AFEA05C998736B1EDD03103D00 /* Polyline.swift */,
-				99D1F4B0D55BAEC353C27CDA52F02BD7 /* Support Files */,
+				F780A30138B9846888767B4151587271 /* MapboxDirections.h */,
+				0F7A6C227333F4AAC9467A84221AD7E9 /* MBAttribute.h */,
+				EF28649A06E2DDC57BE035A31FBE286F /* MBAttribute.swift */,
+				FFF782C96CCE614F9CF873B29604212C /* MBCongestion.swift */,
+				95DF19AD4A1A451A52C9166D673B4750 /* MBDirections.swift */,
+				D84B7C9F0B861539D915E04EE093DCDC /* MBIntersection.swift */,
+				F8BEF82C431CEE413B5128E909621FC6 /* MBLane.swift */,
+				C927C79A3C778679DB27541F5B5D6C91 /* MBLaneIndication.h */,
+				7FBDFC92EB8FDADD90E6062F51995FD1 /* MBLaneIndication.swift */,
+				26BE64F5D95EADA9587E52A0C6EA223D /* MBRoadClasses.h */,
+				15239775AD31590142CFD1F5A571E4C8 /* MBRoadClasses.swift */,
+				160A85A0472457ED20126C8A42C789D0 /* MBRoute.swift */,
+				30B053E34ACE8BB4D074BF2D6896F9B3 /* MBRouteLeg.swift */,
+				4A04C15D3F9D67D7DB960CBBD3752628 /* MBRouteOptions.h */,
+				B6EFE0A661FD630ADEB1DE77E445B7E7 /* MBRouteOptions.m */,
+				4F7866AEADAC6B9F895DEEAD68A33386 /* MBRouteOptions.swift */,
+				47D5EED5B96285BB24879233FD1C158A /* MBRouteStep.swift */,
+				B99BA2F1B8AA8923F9E6026F446CDC99 /* MBSpokenInstruction.swift */,
+				AB4080ED8672F69201E1CD4F976494E0 /* MBWaypoint.swift */,
+				EBC7726F03D46B9291AACA546592A9D1 /* Support Files */,
 			);
+<<<<<<< HEAD
 			path = Polyline;
+=======
+			path = MapboxDirections.swift;
+>>>>>>> 36329f214863ea120c06ba775a91289276bd9c7a
 			sourceTree = "<group>";
 		};
-		99D1F4B0D55BAEC353C27CDA52F02BD7 /* Support Files */ = {
+		9122D783B3B41F7AAEEE461AB2CE2BEB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B800D7D20E5388193C5492E32E823AA3 /* Info.plist */,
-				92CDE02B0E19E7B5DF116E4E68E73189 /* Polyline.modulemap */,
-				794083345A35980F1F0371E9D116522F /* Polyline.xcconfig */,
-				A2D9174EC39C4FBC0AAF7B16DADB6770 /* Polyline-dummy.m */,
-				1E62E292692E6E64EBA6504BE8B166E0 /* Polyline-prefix.pch */,
-				876F20B17F437CF825DED8B4D7F41EA6 /* Polyline-umbrella.h */,
+				4F047221721E7918A1B7BB04FE4E0034 /* Info.plist */,
+				68ED1E1023C1754E55EB7F00FDCE9150 /* SwiftyJSON.modulemap */,
+				57EA6404017C678AECCEF1788FDFAA58 /* SwiftyJSON.xcconfig */,
+				D07B82A2BD2F36B51E8DF84DB23C2360 /* SwiftyJSON-dummy.m */,
+				B96227270E725A5D48D3891A58ADA04D /* SwiftyJSON-prefix.pch */,
+				1AC3AA96E220A9FF096D0F879E53807F /* SwiftyJSON-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Polyline";
+			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
-		9BECD978D4027041F5FC424141D87CEE /* Pods */ = {
+		9A6D731633A132E9959A3388F3C1F539 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3BE8C60C4FF088C585222CB279D67669 /* Mapbox-iOS-SDK */,
-				64B73C77E3F97118F361D2C6254A148B /* MapboxDirections.swift */,
-				92E96C60749711536F8B2A44B3AB7F56 /* Polyline */,
+				096E15A28DC0103DD6CB2EE459184D87 /* MapboxDirections.framework */,
+				93AC2A1192F982267402613210B427EC /* Pods_ULTURNative_Routes.framework */,
+				2E93BCBFEFB7A3372DB6CA3B9D1345D4 /* Pods_ULTURNative_RoutesTests.framework */,
+				7386D586B9C49B15EC73203DB538AB6A /* Pods_ULTURNative_RoutesUITests.framework */,
+				D2F5B8252C8207409A9BFF7BE3000A3A /* Polyline.framework */,
+				4DC980F126CAA71BAD374A43B173B9D6 /* SwiftyJSON.framework */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		9FD5608A9DDC3E188CC808A56AC0A6C5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6256E07D4CF477D42BCC00B8F7AF417B /* Info.plist */,
-				6CDA05AB1932E12270967DD742EF3A40 /* MapboxDirections.swift.modulemap */,
-				C0549944EAF61C694866988A06B0F5DD /* MapboxDirections.swift.xcconfig */,
-				1C345D6645FAC2823CBC741B5F872AB3 /* MapboxDirections.swift-dummy.m */,
-				E5AAF811CB0FC2EE36E8C2F3221D39A3 /* MapboxDirections.swift-prefix.pch */,
-				90526992EEFE995B7901BD0E9E7B53DD /* MapboxDirections.swift-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MapboxDirections.swift";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		B3E3DFBB3986DCB93E1A419FF8881957 /* Pods-ULTURNative-RoutesTests */ = {
@@ -385,17 +459,41 @@
 			path = "Target Support Files/Pods-ULTURNative-RoutesTests";
 			sourceTree = "<group>";
 		};
+		BB6002A4FFE121C9E09AF643AD96A1FD /* Polyline */ = {
+			isa = PBXGroup;
+			children = (
+				31CE537AF1ED0F64A9AFE2CA3E0BFC1A /* Polyline.h */,
+				C021AFB2FB5B6E8098338ACA63BECC69 /* Polyline.swift */,
+				75B71915D045883B61D3B9B92E58E287 /* Support Files */,
+			);
+			path = Polyline;
+			sourceTree = "<group>";
+		};
+		E3F097B3418C90B0B1102ED16FCE7C80 /* Mapbox-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				065659CD83D62CB2A3430F3AD47B820E /* Frameworks */,
+			);
+			path = "Mapbox-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		EBC7726F03D46B9291AACA546592A9D1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				280A472B56EED1EE6DE8DBD5DBAA9580 /* Info.plist */,
+				B71495F569F467CBEA2EFE8FF23852A1 /* MapboxDirections.swift.modulemap */,
+				346ABA81965B4C00FAB7645B1B4962A7 /* MapboxDirections.swift.xcconfig */,
+				EFDC51815B98801AC13488C7E18C7F56 /* MapboxDirections.swift-dummy.m */,
+				0C08652E1D6E74C4090CA159A1B8F6FD /* MapboxDirections.swift-prefix.pch */,
+				5281BC127A485EAA05839E23F468E84F /* MapboxDirections.swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MapboxDirections.swift";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3D1F1C3E72D3438B33B0CB94860E549C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9A8F1F83F0E8FD760049977055636941 /* Pods-ULTURNative-Routes-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		60EC504FD32D5CA66F69A72E6B75C08B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -425,12 +523,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C913EF1011DF411023E8FBA36FD0434A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E67B05EE9432733CC2FF5E0692D6C97 /* Pods-ULTURNative-Routes-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9D4D6EFAFBAF53A59D33368FABE0CB5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3C856925E05BDCAEC92DD95B072EA892 /* Polyline-umbrella.h in Headers */,
 				8D4C39C551B2BDC29CB235F697D3D02F /* Polyline.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6D3DF02BBD57CCE1CEF51E5FE056CC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D539999034B2DD2B013C51339F284447 /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,7 +565,7 @@
 			);
 			name = "Pods-ULTURNative-RoutesTests";
 			productName = "Pods-ULTURNative-RoutesTests";
-			productReference = 3783300673382B4DFCD9108D848B72C5 /* Pods_ULTURNative_RoutesTests.framework */;
+			productReference = 2E93BCBFEFB7A3372DB6CA3B9D1345D4 /* Pods_ULTURNative_RoutesTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		1CF51137669D074ECEFAE2849DEF84FF /* Polyline */ = {
@@ -468,7 +582,7 @@
 			);
 			name = Polyline;
 			productName = Polyline;
-			productReference = 0597476EBAE273F6FEF4B7881A4FC1E2 /* Polyline.framework */;
+			productReference = D2F5B8252C8207409A9BFF7BE3000A3A /* Polyline.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		511E7E4308C72432454FF2130B6BF014 /* MapboxDirections.swift */ = {
@@ -486,7 +600,7 @@
 			);
 			name = MapboxDirections.swift;
 			productName = MapboxDirections.swift;
-			productReference = 550E293EA086A75DF0A3255BA970E1A2 /* MapboxDirections.framework */;
+			productReference = 096E15A28DC0103DD6CB2EE459184D87 /* MapboxDirections.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6EA1357BD0380A43E8388B547F25CBF7 /* Pods-ULTURNative-RoutesUITests */ = {
@@ -503,26 +617,44 @@
 			);
 			name = "Pods-ULTURNative-RoutesUITests";
 			productName = "Pods-ULTURNative-RoutesUITests";
-			productReference = 5DA50E3373EF12A15B6E09C414FC0DA4 /* Pods_ULTURNative_RoutesUITests.framework */;
+			productReference = 7386D586B9C49B15EC73203DB538AB6A /* Pods_ULTURNative_RoutesUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7F3E45224A4B3699FCF817024832271D /* Pods-ULTURNative-Routes */ = {
+		AE86B396DE46AB10418FBCCACB7BF73B /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92703B327B29A204D3A7B09D05A87700 /* Build configuration list for PBXNativeTarget "Pods-ULTURNative-Routes" */;
+			buildConfigurationList = 029469116BFD7B83D524D175E198190F /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
 			buildPhases = (
-				1984214CA13DACCCE79F04AFD81B9286 /* Sources */,
-				3B09ED80ECF6BAABA591FA2B63427B26 /* Frameworks */,
-				3D1F1C3E72D3438B33B0CB94860E549C /* Headers */,
+				0FDCF37B1073CBD55F8A6D67BAB66D39 /* Sources */,
+				8688AE89F2CC1C2380D1596F79D5F9BD /* Frameworks */,
+				ED6D3DF02BBD57CCE1CEF51E5FE056CC /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				70FDD7DC17A97036F593682023439428 /* PBXTargetDependency */,
-				25EF2DE08E48FCF56536FEC4CFFBE33C /* PBXTargetDependency */,
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 4DC980F126CAA71BAD374A43B173B9D6 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CD71541C39DAAD793BDE2991C220A82C /* Pods-ULTURNative-Routes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB114F20EE61F205AC9C072F134966CC /* Build configuration list for PBXNativeTarget "Pods-ULTURNative-Routes" */;
+			buildPhases = (
+				79317256FE719EECF08FC96512F96E5D /* Sources */,
+				49F571E91F5FFA39E63B0A49CDDE6E39 /* Frameworks */,
+				C913EF1011DF411023E8FBA36FD0434A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A57B343713A6E5A8980AB5A6643EDF4 /* PBXTargetDependency */,
+				262D72CCF8851CB110C0B2CB8D583715 /* PBXTargetDependency */,
+				2E52EC463FCF5D16E6B13F5F1D30AEB8 /* PBXTargetDependency */,
 			);
 			name = "Pods-ULTURNative-Routes";
 			productName = "Pods-ULTURNative-Routes";
-			productReference = 0A387B953137D39B9117D9A762F67C40 /* Pods_ULTURNative_Routes.framework */;
+			productReference = 93AC2A1192F982267402613210B427EC /* Pods_ULTURNative_Routes.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -542,20 +674,30 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 26DF9F1B11853AE949FFC3638F452E8F /* Products */;
+			productRefGroup = 9A6D731633A132E9959A3388F3C1F539 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				511E7E4308C72432454FF2130B6BF014 /* MapboxDirections.swift */,
-				7F3E45224A4B3699FCF817024832271D /* Pods-ULTURNative-Routes */,
+				CD71541C39DAAD793BDE2991C220A82C /* Pods-ULTURNative-Routes */,
 				042192C8A1E42C42C87443C3E986EBA6 /* Pods-ULTURNative-RoutesTests */,
 				6EA1357BD0380A43E8388B547F25CBF7 /* Pods-ULTURNative-RoutesUITests */,
 				1CF51137669D074ECEFAE2849DEF84FF /* Polyline */,
+				AE86B396DE46AB10418FBCCACB7BF73B /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0FDCF37B1073CBD55F8A6D67BAB66D39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5299ACC8285822048DD9BA61A36D5A0 /* SwiftyJSON-dummy.m in Sources */,
+				CE7DCEFFC5FB4BF127B02EFE130EA1E6 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		180140EA4A374D5D047156127EF1BB1F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -565,19 +707,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1984214CA13DACCCE79F04AFD81B9286 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				935925633A9B55F1E02B5827E89153B4 /* Pods-ULTURNative-Routes-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6E645F6065C756C71F0FC20690B6C27A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D027295D4526FEBA4C9ECFCA65C1A2A4 /* Pods-ULTURNative-RoutesTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79317256FE719EECF08FC96512F96E5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCE78E167EE2C665044B778F6369117E /* Pods-ULTURNative-Routes-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,17 +756,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		25EF2DE08E48FCF56536FEC4CFFBE33C /* PBXTargetDependency */ = {
+		262D72CCF8851CB110C0B2CB8D583715 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Polyline;
 			target = 1CF51137669D074ECEFAE2849DEF84FF /* Polyline */;
-			targetProxy = A988694AF1CEDAC67F1271949E19C3C8 /* PBXContainerItemProxy */;
+			targetProxy = FFAA55C1FC52BB690EF0E9BFCF3D4ABC /* PBXContainerItemProxy */;
 		};
-		70FDD7DC17A97036F593682023439428 /* PBXTargetDependency */ = {
+		2E52EC463FCF5D16E6B13F5F1D30AEB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = AE86B396DE46AB10418FBCCACB7BF73B /* SwiftyJSON */;
+			targetProxy = 2EA8DBC74F437DE9CF64CA9C05BD8082 /* PBXContainerItemProxy */;
+		};
+		5A57B343713A6E5A8980AB5A6643EDF4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MapboxDirections.swift;
 			target = 511E7E4308C72432454FF2130B6BF014 /* MapboxDirections.swift */;
-			targetProxy = 5D4566024599E00E4ECEC2915E2E49FE /* PBXContainerItemProxy */;
+			targetProxy = 6BD4BE3948C797479A9979184F56CB11 /* PBXContainerItemProxy */;
 		};
 		9700DC33BA8321FA697D894B58841693 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -671,7 +819,7 @@
 		};
 		28A0631980E258D7AC97CB9FB40BEF5B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0549944EAF61C694866988A06B0F5DD /* MapboxDirections.swift.xcconfig */;
+			baseConfigurationReference = 346ABA81965B4C00FAB7645B1B4962A7 /* MapboxDirections.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -765,6 +913,7 @@
 			};
 			name = Release;
 		};
+<<<<<<< HEAD
 		53E62DD5F836B28B59F3DB6C8DAE53CB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1B75A6126FB3B368A109C733F331E2C3 /* Pods-ULTURNative-RoutesTests.release.xcconfig */;
@@ -799,6 +948,9 @@
 			name = Release;
 		};
 		5B70C95E6568C31C52C98A32B115A5EB /* Debug */ = {
+=======
+		5723E11740817D8FAA83653B1147A69E /* Release */ = {
+>>>>>>> 36329f214863ea120c06ba775a91289276bd9c7a
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE97F008E584F2417957468315DBBB47 /* Pods-ULTURNative-RoutesUITests.debug.xcconfig */;
 			buildSettings = {
@@ -852,7 +1004,11 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+<<<<<<< HEAD
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+=======
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+>>>>>>> 36329f214863ea120c06ba775a91289276bd9c7a
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -864,7 +1020,11 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+<<<<<<< HEAD
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+=======
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+>>>>>>> 36329f214863ea120c06ba775a91289276bd9c7a
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
@@ -888,7 +1048,11 @@
 		};
 		6B4882045C47EFD27173D824C05C8D3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+<<<<<<< HEAD
 			baseConfigurationReference = 794083345A35980F1F0371E9D116522F /* Polyline.xcconfig */;
+=======
+			baseConfigurationReference = 346ABA81965B4C00FAB7645B1B4962A7 /* MapboxDirections.swift.xcconfig */;
+>>>>>>> 36329f214863ea120c06ba775a91289276bd9c7a
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -917,9 +1081,89 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		A1A4A2F5D1B5A8E7ABC2F30FBF0064E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A7D87BE92EBE4FC4AEDBD032956E748D /* Pods-ULTURNative-Routes.release.xcconfig */;
+=======
+		8CDE09880D4C5835F51AA2DF5C31DAB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57EA6404017C678AECCEF1788FDFAA58 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9E11AF3E9B21F7785D32CA0E9A7C7EC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 792001A3BDA8C3249B10B247F2814D3F /* Pods-ULTURNative-Routes.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ULTURNative-Routes/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ULTURNative-Routes/Pods-ULTURNative-Routes.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ULTURNative_Routes;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A7CB832BF8D6621FEC93D63954FCAC03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F9DAC85A35C64C379FC31E99B60C2AB /* Polyline.xcconfig */;
+>>>>>>> 36329f214863ea120c06ba775a91289276bd9c7a
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -983,7 +1227,46 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		B57C09D404C607DDE283C5C44183B2A1 /* Debug */ = {
+=======
+		DF60D8DE9C2567648D58C73B7B0DDE76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57EA6404017C678AECCEF1788FDFAA58 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EF26A3C5B6EDA309192C6025F703DE0A /* Debug */ = {
+>>>>>>> 36329f214863ea120c06ba775a91289276bd9c7a
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1005,7 +1288,11 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+<<<<<<< HEAD
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+=======
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+>>>>>>> 36329f214863ea120c06ba775a91289276bd9c7a
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1014,7 +1301,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+<<<<<<< HEAD
 				DEBUG_INFORMATION_FORMAT = dwarf;
+=======
+>>>>>>> 36329f214863ea120c06ba775a91289276bd9c7a
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1045,7 +1335,7 @@
 		};
 		F1B8EB8411FA009C4D74B286F64B0662 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 794083345A35980F1F0371E9D116522F /* Polyline.xcconfig */;
+			baseConfigurationReference = 7F9DAC85A35C64C379FC31E99B60C2AB /* Polyline.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1078,6 +1368,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		029469116BFD7B83D524D175E198190F /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CDE09880D4C5835F51AA2DF5C31DAB7 /* Debug */,
+				DF60D8DE9C2567648D58C73B7B0DDE76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D849F29946D8A48D53286A43BD09C44 /* Build configuration list for PBXNativeTarget "MapboxDirections.swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1105,11 +1404,16 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92703B327B29A204D3A7B09D05A87700 /* Build configuration list for PBXNativeTarget "Pods-ULTURNative-Routes" */ = {
+		AB114F20EE61F205AC9C072F134966CC /* Build configuration list for PBXNativeTarget "Pods-ULTURNative-Routes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
+<<<<<<< HEAD
 				21637E899FA0E3E141B0AB1FD103D826 /* Debug */,
 				A1A4A2F5D1B5A8E7ABC2F30FBF0064E1 /* Release */,
+=======
+				9E11AF3E9B21F7785D32CA0E9A7C7EC8 /* Debug */,
+				5723E11740817D8FAA83653B1147A69E /* Release */,
+>>>>>>> 36329f214863ea120c06ba775a91289276bd9c7a
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
