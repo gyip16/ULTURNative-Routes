@@ -12,17 +12,19 @@ import CoreLocation
 import Mapbox
 import MapboxDirections	
 
-class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, MGLMapViewDelegate
+
+class ViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDelegate
 {
+    /*
     //this is map view
     @IBOutlet weak var map: MKMapView!
     
     @IBOutlet weak var speedLabel: UILabel!
     
-    
-    let manager = CLLocationManager()
+    */
+    //let manager = CLLocationManager()
     let directions = Directions.shared
-    
+    /*
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
     {
         let location = locations[0]
@@ -45,16 +47,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         self.map.showsUserLocation = true
         
     }
-    
+    */
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        /*
         manager.delegate = self
         map.delegate = self
         mapRoute()
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestWhenInUseAuthorization()
-        manager.startUpdatingLocation()
+        manager.startUpdatingLocation()*/
         
         let mapView = MGLMapView(frame: view.bounds, styleURL: MGLStyle.darkStyleURL())
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -73,26 +76,27 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
                 print("Error calculating directions: \(error!)")
                 return
             }
-            print("I love plz work: \(routes)  NO I HATE U NOW")
+            
             if let route = routes?.first, let leg = route.legs.first {
                 print("Route via \(leg):")
-                
-                let distanceFormatter = LengthFormatter()
-                let formattedDistance = distanceFormatter.string(fromMeters: route.distance)
                 
                 let travelTimeFormatter = DateComponentsFormatter()
                 travelTimeFormatter.unitsStyle = .short
                 let formattedTravelTime = travelTimeFormatter.string(from: route.expectedTravelTime)
                 
-                print("Distance: \(formattedDistance); ETA: \(formattedTravelTime!)")
+                print("Distance: \(route.distance)m; ETA: \(formattedTravelTime!)")
                 
                 for step in leg.steps {
                     print("\(step.instructions)")
-                    for intersection in step.intersections! {
-                        print("\(intersection.location)")
-                    }
-                    let formattedDistance = distanceFormatter.string(fromMeters: step.distance)
-                    print("— \(formattedDistance) —")
+                    print("\(step.intersections![step.intersections!.count-1].location.latitude)    \(step.intersections![step.intersections!.count-1].location.longitude)")
+                    //print("\(legsteps["intersection"][legsteps["intersection"].count-1]["location"][0])   \(legsteps["intersection"][legsteps["intersection"].count-1]["location"][1])")
+                    print("— \(step.distance)m —")
+                    
+                    let point = MGLPointAnnotation()
+                    point.coordinate = step.intersections![step.intersections!.count-1].location
+                    point.title = "Hello!"
+                    point.subtitle = "\(step.intersections![step.intersections!.count-1].location.latitude)    \(step.intersections![step.intersections!.count-1].location.longitude)"
+                    mapView.addAnnotation(point)
                 }
                 
                 if route.coordinateCount > 0 {
@@ -106,7 +110,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
                 }
             }
         }
-        mapboxdirection();
         
         
 
@@ -117,6 +120,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         // Dispose of any resources that can be recreated.
     }
     
+    // Use the default marker. See also: our view annotation or custom marker examples.
+    func mapView(_ mapView: MGLMapView, viewFor annotation: MGLAnnotation) -> MGLAnnotationView? {
+        return nil
+    }
+    
+    // Allow callout view to appear when an annotation is tapped.
+    func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
+        return true
+    }
+    /*
     func mapRoute(){
 
         let sourceLocation = CLLocationCoordinate2D(latitude: 49.257764, longitude: -123.107053)
@@ -171,11 +184,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         }
     }
     
-    func mapboxdirection() {
-
-        
-
-    }
-    
+    */
 }
 
