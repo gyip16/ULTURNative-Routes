@@ -88,7 +88,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9yg-DG-TKw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="894" y="-235"/>
+            <point key="canvasLocation" x="935" y="-235"/>
         </scene>
         <!--MaplessNavController-->
         <scene sceneID="52c-6q-wnM">

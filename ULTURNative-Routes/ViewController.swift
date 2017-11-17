@@ -9,9 +9,9 @@
 import UIKit
 import MapKit
 import CoreLocation
-import Mapbox
-import MapboxDirections
-import MapboxNavigation
+//import Mapbox
+//import MapboxDirections
+//import MapboxNavigation
 
 class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate
 {
