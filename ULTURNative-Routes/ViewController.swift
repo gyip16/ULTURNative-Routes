@@ -64,6 +64,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDel
         mapView.setCenter(CLLocationCoordinate2D(latitude: 38.9131752, longitude: -77.0324047), zoomLevel: 9, animated: false)
         view.addSubview(mapView)
         
+        // Set the map view's delegate
+        mapView.delegate = self
+        
+        
+        // Allow the map view to display the user's location
+        mapView.showsUserLocation = true
         let waypoints = [
             Waypoint(coordinate: CLLocationCoordinate2D(latitude: 38.9131752, longitude: -77.0324047), name: "Mapbox"),
             Waypoint(coordinate: CLLocationCoordinate2D(latitude: 38.8977, longitude: -77.0365), name: "White House"),
@@ -129,61 +135,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDel
     func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
         return true
     }
-    /*
-    func mapRoute(){
-
-        let sourceLocation = CLLocationCoordinate2D(latitude: 49.257764, longitude: -123.107053)
-        let destinationLocation = CLLocationCoordinate2D(latitude: 49.258062, longitude: -123.107450)
-   
-        let sourcePlacemark = MKPlacemark(coordinate: sourceLocation, addressDictionary: nil)
-        let destinationPlacemark = MKPlacemark(coordinate: destinationLocation, addressDictionary: nil)
-        
-        let sourceMapItem = MKMapItem(placemark: sourcePlacemark)
-        let destinationMapItem = MKMapItem(placemark: destinationPlacemark)
-        
-        let sourceAnnotation = MKPointAnnotation()
-        sourceAnnotation.title = "hello world"
-        
-        if let location = sourcePlacemark.location {
-            sourceAnnotation.coordinate = location.coordinate
-        }
-        
-        
-        let destinationAnnotation = MKPointAnnotation()
-        destinationAnnotation.title = "Vancouver"
-        
-        if let location = destinationPlacemark.location {
-            destinationAnnotation.coordinate = location.coordinate
-        }
-        
-        self.map.showAnnotations([sourceAnnotation,destinationAnnotation], animated: true )
-        
-        let directionRequest = MKDirectionsRequest()
-        directionRequest.source = sourceMapItem
-        directionRequest.destination = destinationMapItem
-        directionRequest.transportType = .automobile
-        
-        let directions = MKDirections(request: directionRequest)
-        
-        directions.calculate {
-            (response, error) -> Void in
-            
-            guard let response = response else {
-                if let error = error {
-                    print("Error: \(error)")
-                }
-                
-                return
-            }
-            
-            let route = response.routes[0]
-            self.map.add((route.polyline), level: MKOverlayLevel.aboveRoads)
-            
-            //let rect = route.polyline.boundingMapRect
-            //self.map.setRegion(MKCoordinateRegionForMapRect(rect), animated: true)
-        }
-    }
     
-    */
+    // Zoom to the annotation when it is selected
+    func mapView(_ mapView: MGLMapView, didSelect annotation: MGLAnnotation) {
+        let camera = MGLMapCamera(lookingAtCenter: annotation.coordinate, fromDistance: 4000, pitch: 0, heading: 0)
+        mapView.setCamera(camera, animated: true)
+    }
+   
 }
 
