@@ -93,15 +93,22 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDel
                 print("Distance: \(route.distance)m; ETA: \(formattedTravelTime!)")
                 
                 for step in leg.steps {
+                    
                     print("\(step.instructions)")
+                    // Turn Direction. Left Right Straight
+                    print("ManeuverDirection: \(step.maneuverDirection!)")
+                    // Turn, Depart, Arrive, End of Road (hit T intersection)
+                    print("ManeuverType: \(step.maneuverType!)")
+                    // Maneuver location
+                    print("ManeuverLocation: \(step.maneuverLocation.latitude)  \(step.maneuverLocation.longitude)")
                     print("\(step.intersections![step.intersections!.count-1].location.latitude)    \(step.intersections![step.intersections!.count-1].location.longitude)")
                     //print("\(legsteps["intersection"][legsteps["intersection"].count-1]["location"][0])   \(legsteps["intersection"][legsteps["intersection"].count-1]["location"][1])")
                     print("— \(step.distance)m —")
                     
                     let point = MGLPointAnnotation()
-                    point.coordinate = step.intersections![step.intersections!.count-1].location
+                    point.coordinate = step.maneuverLocation
                     point.title = "Hello!"
-                    point.subtitle = "\(step.intersections![step.intersections!.count-1].location.latitude)    \(step.intersections![step.intersections!.count-1].location.longitude)"
+                    point.subtitle = "\(step.maneuverLocation.latitude)    \(step.maneuverLocation.longitude)"
                     mapView.addAnnotation(point)
                 }
                 
