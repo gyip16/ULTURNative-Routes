@@ -93,23 +93,26 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDel
                 print("Distance: \(route.distance)m; ETA: \(formattedTravelTime!)")
                 
                 for step in leg.steps {
+                    if ("\(step.maneuverDirection!)" == "left" || "\(step.maneuverDirection!)" == "sharp left") {
+                        print("\(step.instructions)")
+                        print("\(step.initialHeading!) \(step.finalHeading!)")
+                        // Turn Direction. Left Right Straight
+                        print("ManeuverDirection: \(step.maneuverDirection!)")
+                        // Turn, Depart, Arrive, End of Road (hit T intersection)
+                        print("ManeuverType: \(step.maneuverType!)")
+                        // Maneuver location
+                        print("ManeuverLocation: \(step.maneuverLocation.latitude)  \(step.maneuverLocation.longitude)")
+                        print("\(step.intersections![step.intersections!.count-1].location.latitude)    \(step.intersections![step.intersections!.count-1].location.longitude)")
+                        //print("\(legsteps["intersection"][legsteps["intersection"].count-1]["location"][0])   \(legsteps["intersection"][legsteps["intersection"].count-1]["location"][1])")
+                        print("— \(step.distance)m —")
+                        
+                        let point = MGLPointAnnotation()
+                        point.coordinate = step.maneuverLocation
+                        point.title = "Left Turn Point"
+                        point.subtitle = "\(step.maneuverLocation.latitude)    \(step.maneuverLocation.longitude)"
+                        mapView.addAnnotation(point)
+                    }
                     
-                    print("\(step.instructions)")
-                    // Turn Direction. Left Right Straight
-                    print("ManeuverDirection: \(step.maneuverDirection!)")
-                    // Turn, Depart, Arrive, End of Road (hit T intersection)
-                    print("ManeuverType: \(step.maneuverType!)")
-                    // Maneuver location
-                    print("ManeuverLocation: \(step.maneuverLocation.latitude)  \(step.maneuverLocation.longitude)")
-                    print("\(step.intersections![step.intersections!.count-1].location.latitude)    \(step.intersections![step.intersections!.count-1].location.longitude)")
-                    //print("\(legsteps["intersection"][legsteps["intersection"].count-1]["location"][0])   \(legsteps["intersection"][legsteps["intersection"].count-1]["location"][1])")
-                    print("— \(step.distance)m —")
-                    
-                    let point = MGLPointAnnotation()
-                    point.coordinate = step.maneuverLocation
-                    point.title = "Hello!"
-                    point.subtitle = "\(step.maneuverLocation.latitude)    \(step.maneuverLocation.longitude)"
-                    mapView.addAnnotation(point)
                 }
                 
                 if route.coordinateCount > 0 {
