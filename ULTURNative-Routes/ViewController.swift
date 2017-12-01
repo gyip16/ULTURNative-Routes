@@ -19,7 +19,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDel
     let directions = Directions.shared
     var locationManager = CLLocationManager()
     
-    
+    @IBOutlet weak var speedButton: UIButton!
+    @IBOutlet weak var mapviewlayer: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,14 +29,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDel
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
-        
-        let manager = CLLocationManager()
-        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+
 
         let mapView = MGLMapView(frame: view.bounds, styleURL: MGLStyle.darkStyleURL())
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        let manager = CLLocationManager()
+        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         mapView.setCenter(CLLocationCoordinate2D(latitude: locValue.latitude, longitude: locValue.longitude), zoomLevel: 15, animated: false)
-        view.addSubview(mapView)
+        mapviewlayer.addSubview(mapView)
+        mapviewlayer.addSubview(speedButton)
         
         print("locations = \(locValue.latitude) \(locValue.longitude)")
         
@@ -70,26 +72,26 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDel
                 print("Distance: \(route.distance)m; ETA: \(formattedTravelTime!)")
                 
                 for step in leg.steps {
-                    if ("\(step.maneuverDirection!)" == "left" || "\(step.maneuverDirection!)" == "sharp left") {
-                        print("\(step.instructions)")
-                        print("\(step.initialHeading!) \(step.finalHeading!)")
-                        // Turn Direction. Left Right Straight
-                        print("ManeuverDirection: \(step.maneuverDirection!)")
-                        // Turn, Depart, Arrive, End of Road (hit T intersection)
-                        print("ManeuverType: \(step.maneuverType!)")
-                        // Maneuver location
-                        print("ManeuverLocation: \(step.maneuverLocation.latitude)  \(step.maneuverLocation.longitude)")
-                        print("\(step.intersections![step.intersections!.count-1].location.latitude)    \(step.intersections![step.intersections!.count-1].location.longitude)")
-                        //print("\(legsteps["intersection"][legsteps["intersection"].count-1]["location"][0])   \(legsteps["intersection"][legsteps["intersection"].count-1]["location"][1])")
-                        print("— \(step.distance)m —")
-                        
-                        let point = MGLPointAnnotation()
-                        point.coordinate = step.maneuverLocation
-                        point.title = "Left Turn Point"
-                        point.subtitle = "\(step.maneuverLocation.latitude)    \(step.maneuverLocation.longitude)"
-                        mapView.addAnnotation(point)
+                    if let left = step.maneuverDirection {
+                        if ("\(left)" == "left" || "\(left)" == "sharp left") {
+                            print("\(step.instructions)")
+                            // Turn Direction. Left Right Straight
+                            //print("ManeuverDirection: \(step.maneuverDirection!)")
+                            // Turn, Depart, Arrive, End of Road (hit T intersection)
+                            print("ManeuverType: \(step.maneuverType!)")
+                            // Maneuver location
+                            print("ManeuverLocation: \(step.maneuverLocation.latitude)  \(step.maneuverLocation.longitude)")
+                            print("\(step.intersections![step.intersections!.count-1].location.latitude)    \(step.intersections![step.intersections!.count-1].location.longitude)")
+                            //print("\(legsteps["intersection"][legsteps["intersection"].count-1]["location"][0])   \(legsteps["intersection"][legsteps["intersection"].count-1]["location"][1])")
+                            print("— \(step.distance)m —")
+                            
+                            let point = MGLPointAnnotation()
+                            point.coordinate = step.maneuverLocation
+                            point.title = "Hello!"
+                            point.subtitle = "\(step.maneuverLocation.latitude)    \(step.maneuverLocation.longitude)"
+                            mapView.addAnnotation(point)
+                        }
                     }
-                    
                 }
                 
                 if route.coordinateCount > 0 {
@@ -103,13 +105,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDel
                 }
             }
         }
-        
-        
     }
     //continue update current location
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         //let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         print("Current Speed:\(manager.location!.speed)")
+        let speed = manager.location!.speed
+        let result = speed * 15/8
+        if(result<0){
+            let showing:String = String(0)
+            speedButton.setTitle("\(showing) km/h", for: .normal)
+            
+        }else{
+            let showing:String = String(format:"%.1f", result)
+            speedButton.setTitle("\(showing) km/h", for: .normal)
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
