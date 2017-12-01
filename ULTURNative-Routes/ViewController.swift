@@ -18,6 +18,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDel
     
     let directions = Directions.shared
     var locationManager = CLLocationManager()
+    var leftTurningPoints = [CLLocationCoordinate2D]()
     
     @IBOutlet weak var speedButton: UIButton!
     @IBOutlet weak var mapviewlayer: UIView!
@@ -48,12 +49,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDel
         
         let waypoints = [
             Waypoint(coordinate: locValue, name: "Mapbox"),
-            Waypoint(coordinate: CLLocationCoordinate2D(latitude: 38.8977, longitude: -77.0365), name: "White House"),
+            Waypoint(coordinate: CLLocationCoordinate2D(latitude: 49.273372, longitude: -123.101828), name: "Science World"),
             ]
         let options = RouteOptions(waypoints: waypoints, profileIdentifier: .automobileAvoidingTraffic)
         options.includesSteps = true
-        
-        
         
         
         let task = directions.calculate(options) { (waypoints, routes, error) in
@@ -74,6 +73,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDel
                 for step in leg.steps {
                     if let left = step.maneuverDirection {
                         if ("\(left)" == "left" || "\(left)" == "sharp left") {
+                            self.leftTurningPoints.append(step.maneuverLocation)
                             print("\(step.instructions)")
                             // Turn Direction. Left Right Straight
                             //print("ManeuverDirection: \(step.maneuverDirection!)")
@@ -95,6 +95,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDel
                 }
                 
                 if route.coordinateCount > 0 {
+                    for p in self.leftTurningPoints {
+                        print("\(p.latitude)   \(p.longitude)")
+                    }
                     // Convert the route’s coordinates into a polyline.
                     var routeCoordinates = route.coordinates!
                     let routeLine = MGLPolyline(coordinates: &routeCoordinates, count: route.coordinateCount)
