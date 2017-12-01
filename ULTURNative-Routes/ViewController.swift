@@ -19,7 +19,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDel
     let directions = Directions.shared
     var locationManager = CLLocationManager()
     
-    
+    @IBOutlet weak var speedButton: UIButton!
+    @IBOutlet weak var mapviewlayer: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,14 +29,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDel
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
-        
-        let manager = CLLocationManager()
-        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+
 
         let mapView = MGLMapView(frame: view.bounds, styleURL: MGLStyle.darkStyleURL())
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        let manager = CLLocationManager()
+        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         mapView.setCenter(CLLocationCoordinate2D(latitude: locValue.latitude, longitude: locValue.longitude), zoomLevel: 15, animated: false)
-        view.addSubview(mapView)
+        mapviewlayer.addSubview(mapView)
+        mapviewlayer.addSubview(speedButton)
         
         print("locations = \(locValue.latitude) \(locValue.longitude)")
         
@@ -73,7 +75,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDel
                     
                     print("\(step.instructions)")
                     // Turn Direction. Left Right Straight
-                    print("ManeuverDirection: \(step.maneuverDirection!)")
+                    //print("ManeuverDirection: \(step.maneuverDirection!)")
                     // Turn, Depart, Arrive, End of Road (hit T intersection)
                     print("ManeuverType: \(step.maneuverType!)")
                     // Maneuver location
@@ -107,6 +109,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDel
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         //let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         print("Current Speed:\(manager.location!.speed)")
+        let speed = manager.location!.speed
+        let result = speed * 15/8
+        if(result<0){
+            let showing:String = String(0)
+            speedButton.setTitle("\(showing) km/h", for: .normal)
+            
+        }else{
+            let showing:String = String(format:"%.1f", result)
+            speedButton.setTitle("\(showing) km/h", for: .normal)
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
