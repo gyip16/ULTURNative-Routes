@@ -15,67 +15,44 @@ import MapboxDirections
 
 class ViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDelegate
 {
-    /*
-    //this is map view
-    @IBOutlet weak var map: MKMapView!
     
-    @IBOutlet weak var speedLabel: UILabel!
-    
-    */
-    //let manager = CLLocationManager()
     let directions = Directions.shared
-    /*
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
-    {
-        let location = locations[0]
-        //set the zoom
-        let span:MKCoordinateSpan = MKCoordinateSpanMake(0.001,0.001)
-        
-        let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
-        
-        let region:MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
-        map.setRegion(region, animated: true)
-        //calculation convert location object to double type
-        let vspeed=Double(location.speed)
-        let speedh=round(vspeed*3.6)
-        if(speedh<0){
-            speedLabel.text="0  km/h"}
-        else{
-            speedLabel.text=String(speedh)+"  km/h"
-        }
-        
-        self.map.showsUserLocation = true
-        
-    }
-    */
+    var locationManager = CLLocationManager()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        /*
-        manager.delegate = self
-        map.delegate = self
-        mapRoute()
-        manager.desiredAccuracy = kCLLocationAccuracyBest
-        manager.requestWhenInUseAuthorization()
-        manager.startUpdatingLocation()*/
+        locationManager = CLLocationManager()
+        locationManager.delegate = self;
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestAlwaysAuthorization()
+        locationManager.startUpdatingLocation()
         
+        let manager = CLLocationManager()
+        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+
         let mapView = MGLMapView(frame: view.bounds, styleURL: MGLStyle.darkStyleURL())
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        mapView.setCenter(CLLocationCoordinate2D(latitude: 38.9131752, longitude: -77.0324047), zoomLevel: 9, animated: false)
+        mapView.setCenter(CLLocationCoordinate2D(latitude: locValue.latitude, longitude: locValue.longitude), zoomLevel: 15, animated: false)
         view.addSubview(mapView)
+        
+        print("locations = \(locValue.latitude) \(locValue.longitude)")
         
         // Set the map view's delegate
         mapView.delegate = self
-        
-        
         // Allow the map view to display the user's location
         mapView.showsUserLocation = true
+        
         let waypoints = [
-            Waypoint(coordinate: CLLocationCoordinate2D(latitude: 38.9131752, longitude: -77.0324047), name: "Mapbox"),
+            Waypoint(coordinate: locValue, name: "Mapbox"),
             Waypoint(coordinate: CLLocationCoordinate2D(latitude: 38.8977, longitude: -77.0365), name: "White House"),
             ]
         let options = RouteOptions(waypoints: waypoints, profileIdentifier: .automobileAvoidingTraffic)
         options.includesSteps = true
+        
+        
+        
         
         let task = directions.calculate(options) { (waypoints, routes, error) in
             guard error == nil else {
@@ -128,14 +105,19 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDel
         }
         
         
-
     }
-
+    //continue update current location
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        //let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+        print("Current Speed:\(manager.location!.speed)")
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+}
+//maker functions
+extension ViewController{
     // Use the default marker. See also: our view annotation or custom marker examples.
     func mapView(_ mapView: MGLMapView, viewFor annotation: MGLAnnotation) -> MGLAnnotationView? {
         return nil
@@ -151,6 +133,5 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MGLMapViewDel
         let camera = MGLMapCamera(lookingAtCenter: annotation.coordinate, fromDistance: 4000, pitch: 0, heading: 0)
         mapView.setCamera(camera, animated: true)
     }
-   
 }
 
